@@ -184,15 +184,22 @@
         }
 
         .screenshot {
-            background: #e2e8f0;
             border-radius: 15px;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #a0aec0;
-            font-size: 0.9em;
+            overflow: hidden;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .screenshot:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .screenshot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         footer {
@@ -381,10 +388,33 @@
         <div class="content-section">
             <h2>应用截图</h2>
             <div class="screenshots">
-                <div class="screenshot">主界面截图</div>
-                <div class="screenshot">名句详情截图</div>
-                <div class="screenshot">主题选择截图</div>
-                <div class="screenshot">分享卡片截图</div>
+                <div class="screenshot">
+                    <img src="images/black.png" alt="主界面 - 深色主题">
+                </div>
+                <div class="screenshot">
+                    <img src="images/black_detail.png" alt="名句详情 - 深色主题">
+                </div>
+                <div class="screenshot">
+                    <img src="images/black_share.png" alt="分享卡片 - 深色主题">
+                </div>
+                <div class="screenshot">
+                    <img src="images/black_widget.png" alt="桌面小组件 - 深色主题">
+                </div>
+                <div class="screenshot">
+                    <img src="images/change_theme.png" alt="主题切换 - 深色">
+                </div>
+                <div class="screenshot">
+                    <img src="images/white.png" alt="主界面 - 浅色主题">
+                </div>
+                <div class="screenshot">
+                    <img src="images/white_share.png" alt="分享卡片 - 浅色主题">
+                </div>
+                <div class="screenshot">
+                    <img src="images/white_widget.png" alt="桌面小组件 - 浅色主题">
+                </div>
+                <div class="screenshot">
+                    <img src="images/change_theme_white.png" alt="主题切换 - 浅色">
+                </div>
             </div>
         </div>
 

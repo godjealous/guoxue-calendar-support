@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="国学日历 - 每日国学经典名句应用">
     <title>国学日历 - 让国学经典陪伴每一天</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,10 +16,10 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-            line-height: 1.8;
-            color: #2c3e50;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.75;
+            color: #1E293B;
+            background: #F8FAFC;
             min-height: 100vh;
         }
 
@@ -28,102 +31,149 @@
 
         header {
             text-align: center;
-            margin-bottom: 60px;
-            padding: 40px 20px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            margin-bottom: 80px;
+            padding: 80px 20px;
+            background: #FFFFFF;
+            border-bottom: 1px solid #E2E8F0;
         }
 
         .app-icon {
             width: 120px;
             height: 120px;
-            margin: 0 auto 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 26px;
+            margin: 0 auto 40px;
+            background: #2563EB;
+            border-radius: 28px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 48px;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 20px 60px rgba(37, 99, 235, 0.2);
+        }
+
+        .app-icon svg {
+            width: 64px;
+            height: 64px;
+            color: white;
         }
 
         h1 {
-            font-size: 2.5em;
-            color: #1a202c;
-            margin-bottom: 10px;
-            font-weight: 700;
+            font-family: "Noto Serif TC", serif;
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            color: #0F172A;
+            margin-bottom: 20px;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
         }
 
         .tagline {
-            font-size: 1.2em;
-            color: #718096;
-            margin-bottom: 30px;
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            color: #64748B;
+            margin-bottom: 50px;
+            font-weight: 300;
+            line-height: 1.6;
         }
 
         .download-btn {
             display: inline-block;
-            padding: 15px 40px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 18px 48px;
+            background: #F97316;
             color: white;
             text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.1em;
+            border-radius: 12px;
+            font-size: 1.125rem;
             font-weight: 600;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 16px rgba(249, 115, 22, 0.3);
+            cursor: pointer;
         }
 
         .download-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.6);
+            background: #EA580C;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 24px rgba(249, 115, 22, 0.4);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
         }
 
         .content-section {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 40px;
-            margin-bottom: 30px;
-            border-radius: 20px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            background: #FFFFFF;
+            padding: 60px 40px;
+            margin-bottom: 0;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .content-section:last-of-type {
+            border-bottom: none;
         }
 
         h2 {
-            font-size: 1.8em;
-            color: #2d3748;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid #667eea;
+            font-family: "Noto Serif TC", serif;
+            font-size: clamp(1.75rem, 5vw, 2.5rem);
+            color: #0F172A;
+            margin-bottom: 32px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        h2::before {
+            content: "";
+            display: block;
+            width: 48px;
+            height: 4px;
+            background: #2563EB;
+            margin-bottom: 24px;
+            border-radius: 2px;
         }
 
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
         }
 
         .feature {
-            padding: 25px;
-            background: #f7fafc;
-            border-radius: 15px;
-            border-left: 4px solid #667eea;
-            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 0;
+            background: transparent;
+            transition: transform 0.2s ease;
         }
 
         .feature:hover {
-            transform: translateX(5px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: #EFF6FF;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .feature-icon svg {
+            width: 24px;
+            height: 24px;
+            color: #2563EB;
+            stroke-width: 2;
         }
 
         .feature h3 {
-            font-size: 1.3em;
-            color: #2d3748;
-            margin-bottom: 10px;
+            font-family: "Noto Serif TC", serif;
+            font-size: 1.25rem;
+            color: #0F172A;
+            margin-bottom: 12px;
+            font-weight: 600;
         }
 
         .feature p {
-            color: #4a5568;
-            line-height: 1.6;
+            color: #64748B;
+            line-height: 1.7;
+            font-size: 0.9375rem;
         }
 
         .screenshots {
@@ -147,54 +197,73 @@
 
         footer {
             text-align: center;
-            padding: 40px 20px;
-            color: #718096;
-            margin-top: 60px;
+            padding: 60px 20px;
+            color: #64748B;
+            background: #FAFAFA;
+            border-top: 1px solid #E2E8F0;
         }
 
         footer a {
-            color: #667eea;
+            color: #2563EB;
             text-decoration: none;
-            margin: 0 15px;
-            transition: color 0.3s;
+            margin: 0 20px;
+            transition: color 0.2s ease;
+            font-weight: 500;
         }
 
         footer a:hover {
-            color: #764ba2;
+            color: #1D4ED8;
         }
 
         .quote-display {
             text-align: center;
-            padding: 40px;
-            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
-            border-radius: 15px;
-            margin: 30px 0;
-            border: 2px solid #667eea30;
+            padding: 60px 40px;
+            background: #FAFAFA;
+            border-radius: 16px;
+            margin: 48px 0;
+            border: 1px solid #E2E8F0;
         }
 
         .quote-display p {
-            font-size: 1.5em;
-            color: #2d3748;
-            font-weight: 500;
-            margin-bottom: 15px;
+            font-family: "Noto Serif TC", serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: #0F172A;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            letter-spacing: 0.02em;
         }
 
         .quote-display span {
-            color: #718096;
-            font-size: 0.95em;
+            color: #64748B;
+            font-size: 0.9375rem;
+            font-weight: 400;
         }
 
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
+            header {
+                padding: 60px 20px;
             }
 
             .content-section {
-                padding: 25px;
+                padding: 48px 24px;
             }
 
             .features {
                 grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .quote-display {
+                padding: 40px 24px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
             }
         }
     </style>
@@ -202,10 +271,14 @@
 <body>
     <div class="container">
         <header>
-            <div class="app-icon">📜</div>
+            <div class="app-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                </svg>
+            </div>
             <h1>国学日历</h1>
             <p class="tagline">让国学经典陪伴每一天</p>
-            <a href="#" class="download-btn">📱 App Store 下载</a>
+            <a href="#" class="download-btn">App Store 下载</a>
         </header>
 
         <div class="content-section">
@@ -214,59 +287,99 @@
                 <span>《孙子兵法》虚实篇</span>
             </div>
 
-            <h2>✨ 应用介绍</h2>
+            <h2>应用介绍</h2>
             <p>国学日历是一款专为传统文化爱好者设计的国学日历应用，将千年国学智慧融入现代生活。每天打开应用，即可获得一句精选国学经典名句，配合农历、二十四节气信息，让古人的智慧点亮当下的生活。</p>
 
             <p style="margin-top: 20px;">精选经典古文金句，涵盖《道德经》《论语》《庄子》《孙子兵法》《易经》等国学经典著作，每句配有现代白话解读，帮您深入理解古人智慧在当代的实用价值。</p>
         </div>
 
         <div class="content-section">
-            <h2>🎯 核心功能</h2>
+            <h2>核心功能</h2>
             <div class="features">
                 <div class="feature">
-                    <h3>📖 每日国学名句</h3>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                        </svg>
+                    </div>
+                    <h3>每日国学名句</h3>
                     <p>精选经典，涵盖道德经、论语、庄子、孙子兵法、易经，配有现代白话解读</p>
                 </div>
 
                 <div class="feature">
-                    <h3>🌙 农历与节气</h3>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                        </svg>
+                    </div>
+                    <h3>农历与节气</h3>
                     <p>完整展示农历日期和二十四节气信息，与自然时令同步</p>
                 </div>
 
                 <div class="feature">
-                    <h3>✅ 每日打卡</h3>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                    </div>
+                    <h3>每日打卡</h3>
                     <p>记录连续打卡和累计阅读天数，养成每日读经典的好习惯</p>
                 </div>
 
                 <div class="feature">
-                    <h3>🎨 国风视觉</h3>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+                        </svg>
+                    </div>
+                    <h3>国风视觉</h3>
                     <p>多款精美主题皮肤：碧海金山、星夜祥云、晨曦山水、云海金峰</p>
                 </div>
 
                 <div class="feature">
-                    <h3>📅 历史翻页</h3>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                        </svg>
+                    </div>
+                    <h3>历史翻页</h3>
                     <p>滑动查看过往任意日期的名句，流畅的翻页动画体验</p>
                 </div>
 
                 <div class="feature">
-                    <h3>📤 精美分享</h3>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+                        </svg>
+                    </div>
+                    <h3>精美分享</h3>
                     <p>一键生成国风美图，将每日名句分享至社交平台</p>
                 </div>
 
                 <div class="feature">
-                    <h3>📱 桌面小组件</h3>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                        </svg>
+                    </div>
+                    <h3>桌面小组件</h3>
                     <p>无需打开应用即可在主屏幕查看当日名句</p>
                 </div>
 
                 <div class="feature">
-                    <h3>🔒 完全离线</h3>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                        </svg>
+                    </div>
+                    <h3>完全离线</h3>
                     <p>无需网络连接，无广告，无内购，保护隐私</p>
                 </div>
             </div>
         </div>
 
         <div class="content-section">
-            <h2>📱 应用截图</h2>
+            <h2>应用截图</h2>
             <div class="screenshots">
                 <div class="screenshot">主界面截图</div>
                 <div class="screenshot">名句详情截图</div>
@@ -276,7 +389,7 @@
         </div>
 
         <div class="content-section">
-            <h2>💡 适合人群</h2>
+            <h2>适合人群</h2>
             <ul style="padding-left: 20px; color: #4a5568; line-height: 2;">
                 <li>国学爱好者和传统文化学习者</li>
                 <li>希望培养每日阅读经典习惯的用户</li>
@@ -285,9 +398,9 @@
             </ul>
         </div>
 
-        <div class="content-section" style="text-align: center; background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);">
-            <h2 style="border: none;">🌟 立即下载</h2>
-            <p style="margin: 20px 0; font-size: 1.1em; color: #4a5568;">让古人的智慧点亮当下的生活</p>
+        <div class="content-section" style="text-align: center; background: #FAFAFA; padding: 80px 40px;">
+            <h2 style="margin-bottom: 24px;">立即下载</h2>
+            <p style="margin: 0 0 40px 0; font-size: 1.125rem; color: #64748B; max-width: 600px; margin-left: auto; margin-right: auto;">让古人的智慧点亮当下的生活</p>
             <a href="#" class="download-btn">App Store 下载</a>
         </div>
 

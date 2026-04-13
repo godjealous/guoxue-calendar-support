@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="禅语日历 - 技术支持与帮助中心">
+    <title>技术支持 - 禅语日历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #1a202c;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #718096;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #764ba2;
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #2d3748;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: #2d3748;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p, li {
+            color: #4a5568;
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f7fafc;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .faq-question {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #4a5568;
+            line-height: 1.8;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #667eea30;
+            margin-top: 30px;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: #2d3748;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+
+        .contact-info span {
+            margin-right: 10px;
+            font-size: 1.3em;
+        }
+
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #764ba2;
+        }
+
+        .system-requirements {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .system-requirements ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .system-requirements li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .system-requirements li:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #718096;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .content-section {
+                padding: 25px;
+            }
+
+            .faq-item {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← 返回首页</a>
+
+        <header>
+            <h1>技术支持</h1>
+            <p class="subtitle">禅语日历帮助中心</p>
+        </header>
+
+        <div class="content-section">
+            <h2>📱 系统要求</h2>
+            <div class="system-requirements">
+                <ul>
+                    <li><strong>操作系统：</strong>iOS 15.0 或更高版本</li>
+                    <li><strong>设备：</strong>iPhone、iPad</li>
+                    <li><strong>网络：</strong>无需网络连接（完全离线使用）</li>
+                    <li><strong>存储空间：</strong>约 50 MB</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>❓ 常见问题</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 应用是否需要网络连接？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 不需要。禅语日历是完全离线应用，所有名句和功能均内置在应用中。您无需联网即可使用所有功能，这也确保了您的隐私安全。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 应用是否包含广告或内购项目？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 没有。应用无广告、无内购，一次下载即可永久使用所有功能。我们致力于提供纯净的阅读体验。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 如何使用桌面小组件？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 长按 iPhone 主屏幕空白处，点击左上角"+"号，搜索"禅语日历"，选择小组件样式并添加到主屏幕。小组件会每天自动更新当日名句。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 如何查看历史日期的名句？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 在主界面向下滑动即可查看过去日期的名句，向上滑动可查看未来日期（最多到今天）。流畅的翻页动画让查看历史名句更加自然。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 如何切换主题？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 主界面有两种主题系统：<br>
+                    1. 点击右下角主题图标，切换主页视觉皮肤（碧海金山、星夜祥云、晨曦山水、云海金峰）<br>
+                    2. 点击左下角齿轮图标进入设置，可切换分享卡片主题（书香墨韵、翰墨丹青、青山绿水等）
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 打卡数据会丢失吗？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 打卡数据存储在您的设备本地，只要不删除应用，数据就会一直保留。如果删除应用后重新安装，打卡记录将重置。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 每天的名句是如何分配的？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 应用内置 298 句国学名句，按照一年的天数（day of year）循环分配。这意味着每年同一天会显示相同的名句，让您可以重温和加深理解。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 如何分享名句？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 点击主界面左下角的分享图标，应用会自动生成精美的国风分享卡片，您可以保存到相册或分享到社交平台。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 农历和节气信息是否准确？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 是的。应用使用 iOS 系统原生的中国农历计算方法，并内置了二十四节气的准确数据，确保信息的权威性和准确性。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 名句解读的来源是什么？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 所有名句均来自《道德经》《论语》《庄子》《孙子兵法》《易经》等公有领域的中国古代经典著作。现代白话解读由编辑团队原创撰写，旨在帮助现代读者理解古人智慧在当下的实用价值。
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>🛠️ 使用技巧</h2>
+
+            <h3>1. 每日引导页</h3>
+            <p>每天首次打开应用时，会显示精美的每日引导页，展示当日打卡数据和名句。向上滑动即可进入主界面。</p>
+
+            <h3>2. 查看名句详情</h3>
+            <p>点击主界面中央的名句区域，可查看完整的白话解读，帮助您更深入理解这句话的含义。</p>
+
+            <h3>3. 自定义阅读体验</h3>
+            <p>在设置中，您可以：</p>
+            <ul>
+                <li>切换不同的视觉主题</li>
+                <li>调整分享卡片样式</li>
+                <li>查看累计打卡统计</li>
+            </ul>
+
+            <h3>4. 充分利用小组件</h3>
+            <p>将小组件添加到桌面后，您可以在不打开应用的情况下，随时查看当日名句，让国学智慧时刻陪伴您。</p>
+        </div>
+
+        <div class="content-section">
+            <h2>📧 联系我们</h2>
+            <p>如果您在使用过程中遇到任何问题，或有任何建议和反馈，欢迎通过以下方式联系我们：</p>
+
+            <div class="contact-box">
+                <h3>联系方式</h3>
+                <div class="contact-info">
+                    <span>📧</span>
+                    <div>
+                        <strong>技术支持邮箱：</strong><br>
+                        <a href="mailto:support@example.com">support@example.com</a>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <span>💬</span>
+                    <div>
+                        <strong>用户反馈：</strong><br>
+                        <a href="mailto:feedback@example.com">feedback@example.com</a>
+                    </div>
+                </div>
+                <p style="margin-top: 20px; color: #718096; font-size: 0.95em;">
+                    我们会在 24-48 小时内回复您的邮件。感谢您的支持！
+                </p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>🔄 版本更新</h2>
+            <h3>当前版本：1.0</h3>
+            <p>首次发布，包含以下功能：</p>
+            <ul>
+                <li>298 句精选国学名句</li>
+                <li>农历与二十四节气显示</li>
+                <li>每日打卡系统</li>
+                <li>4 款主题皮肤</li>
+                <li>桌面小组件支持</li>
+                <li>精美分享卡片生成</li>
+                <li>完全离线使用</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>© 2026 禅语日历. All rights reserved.</p>
+            <div style="margin-top: 20px;">
+                <a href="index.html">首页</a>
+                <a href="privacy.html">隐私政策</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

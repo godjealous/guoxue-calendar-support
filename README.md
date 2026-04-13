@@ -1,6 +1,6 @@
-# 禅语日历 - GitHub Pages
+# 国学日历 - GitHub Pages
 
-这是禅语日历应用的官方网站，包含以下页面：
+这是国学日历应用的官方网站，包含以下页面：
 
 - `index.html` - 营销主页（App 介绍和下载）
 - `support.html` - 技术支持页面
@@ -32,15 +32,9 @@ https://[your-username].github.io/[repository-name]/
 1. `index.html` - 将 `<a href="#" class="download-btn">` 中的 `#` 替换为您的 App Store 链接
 2. 搜索所有 `href="#"` 并替换为实际链接
 
-## 更新联系邮箱
+## 联系邮箱
 
-在以下文件中替换示例邮箱为您的真实邮箱：
-
-- `support.html`
-  - `support@example.com` → 您的技术支持邮箱
-  - `feedback@example.com` → 您的用户反馈邮箱
-- `privacy.html`
-  - `privacy@example.com` → 您的隐私咨询邮箱
+所有页面的联系邮箱已设置为：`hy8.8@163.com`
 
 ## 填写 App Store 元数据
 
@@ -72,4 +66,4 @@ python3 -m http.server 8000
 
 ## 许可
 
-© 2026 禅语日历. All rights reserved.
+© 2026 国学日历. All rights reserved.

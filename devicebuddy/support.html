@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="手机仪表盘 - 技术支持与帮助中心">
+    <title>技术支持 - 手机仪表盘</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.75;
+            color: #1E293B;
+            background: #F8FAFC;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-family: "Noto Serif TC", serif;
+            font-size: clamp(2rem, 6vw, 3rem);
+            color: #0F172A;
+            margin-bottom: 10px;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #718096;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #2563EB;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.2s ease;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: #1D4ED8;
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #2d3748;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: #2d3748;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p, li {
+            color: #4a5568;
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f7fafc;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .faq-question {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #4a5568;
+            line-height: 1.8;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #667eea30;
+            margin-top: 30px;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: #2d3748;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+
+        .contact-info span {
+            margin-right: 10px;
+            font-size: 1.3em;
+        }
+
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #764ba2;
+        }
+
+        .system-requirements {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .system-requirements ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .system-requirements li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .system-requirements li:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #718096;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .content-section {
+                padding: 25px;
+            }
+
+            .faq-item {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← 返回首页</a>
+
+        <header>
+            <h1>技术支持</h1>
+            <p class="subtitle">手机仪表盘帮助中心</p>
+        </header>
+
+        <div class="content-section">
+            <h2>系统要求</h2>
+            <div class="system-requirements">
+                <ul>
+                    <li><strong>操作系统：</strong>iOS 17.6 或更高版本</li>
+                    <li><strong>设备：</strong>iPhone 和 iPad</li>
+                    <li><strong>网络：</strong>无需网络连接（数据来自系统 API，本机计算）</li>
+                    <li><strong>存储空间：</strong>约 20 MB</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>常见问题</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 数据刷新频率是多少？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 所有指标每 2 秒自动全量采集刷新，您看到的始终是设备最新的运行状态。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 应用是否需要联网？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 不需要。所有数据直接来自 iOS 系统 API，本机计算，不联网上报。无网络环境下同样完整可用。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 应用是否包含广告或订阅？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 没有。一次买断，永久使用，无广告、无订阅、无内购。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 为什么需要位置权限？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 位置权限用于位置模块，展示实时经纬度、海拔、速度和行进方向。如不需要位置数据，可以拒绝该权限，其余所有模块正常工作。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 为什么需要运动与健身活动权限？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 该权限用于读取气压计数据，在传感器模块中展示大气压力值。如不授权，气压计数据将不显示，其余传感器（加速度计、陀螺仪等）不受影响。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: FPS 数值是如何测量的？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 应用通过 CADisplayLink 实测当前屏幕渲染帧率，反映的是实际绘制性能，而非设备的最高支持帧率。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 历史数据会保留多久？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 16 个核心指标持久化存储，保留最近 30 天的历史数据，供您查看趋势变化。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: 支持 iPad 吗？</div>
+                <div class="faq-answer">
+                    <strong>A:</strong> 支持。应用适配 iPhone 和 iPad，iOS 17.6 及以上版本均可使用。
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>使用说明</h2>
+
+            <h3>切换监控模块</h3>
+            <p>主界面底部或侧边栏列出全部 10 个模块（处理器、内存、电池、存储、网络、显示与 GPU、传感器、位置、音频、系统），点击即可切换。</p>
+
+            <h3>查看历史趋势</h3>
+            <p>网络模块内置 60 秒实时速率图表；其他核心指标可在历史记录页查看近 30 天趋势。</p>
+
+            <h3>授权权限</h3>
+            <p>首次进入位置模块或传感器模块时，系统会弹出权限请求。您可随时在 iOS 设置 → 隐私与安全性 中管理各项权限。</p>
+        </div>
+
+        <div class="content-section">
+            <h2>联系我们</h2>
+            <p>使用过程中遇到问题或有任何建议，欢迎联系：</p>
+
+            <div class="contact-box">
+                <h3>联系方式</h3>
+                <div class="contact-info">
+                    <span>📧</span>
+                    <div>
+                        <strong>技术支持邮箱：</strong><br>
+                        <a href="mailto:hy8.8@163.com">hy8.8@163.com</a>
+                    </div>
+                </div>
+                <p style="margin-top: 20px; color: #718096; font-size: 0.95em;">
+                    我们会在 24-48 小时内回复您的邮件。感谢您的支持！
+                </p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>版本更新</h2>
+            <h3>当前版本：1.0</h3>
+            <p>首次发布，包含以下功能：</p>
+            <ul>
+                <li>10 个监控模块，约 100 项系统指标</li>
+                <li>每 2 秒全量采集刷新</li>
+                <li>16 个核心指标持久化，保留 30 天历史</li>
+                <li>网络实时速率图表（60 秒）</li>
+                <li>支持 iPhone 和 iPad，iOS 17.6+</li>
+                <li>全部使用公开系统 API，无越狱要求</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>© 2026 手机仪表盘. All rights reserved.</p>
+            <div style="margin-top: 20px;">
+                <a href="index.html">首页</a>
+                <a href="privacy.html">隐私政策</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
